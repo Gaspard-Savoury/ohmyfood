@@ -24,7 +24,7 @@ header
 	flex-wrap: wrap;
 }
 
-section
+section img
 {
 	width: 210px;
 	height: 300px;
@@ -36,31 +36,14 @@ section
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 200ms;
 }
 
-section h2
+section img:hover
 {
-	font-size: 0.8em;
-}
-
-#note
-{
-	background-color: #fcdfdb;
-}
-
-#chic
-{
-	background-color: #fff5fd;
-}
-
-#delice
-{
-	background-color: #f9f9f9;
-}
-
-#palette
-{
-	background-color: #fdfffd;
+	transform: scale(1.1);
 }
 
 button
@@ -73,6 +56,13 @@ button
 	border-radius: 10px;
 	border: none;
 	font-size: 1.7em;
+	transition-property: transform;
+	transition-duration: 200ms;
+}
+
+button:hover
+{
+	transform: scale(1.15);
 }
 
 footer
