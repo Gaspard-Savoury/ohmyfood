@@ -1,0 +1,94 @@
+body
+{
+	width: 600px;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+header
+{
+	height: 100px;
+	background-color: #579c88;
+	color: #fdcb46;
+	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#menus
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+section
+{
+	width: 210px;
+	height: 300px;
+	border: 1px #f1f1f1 solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #ededed;
+	margin: 40px 20px 0px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section h2
+{
+	font-size: 0.8em;
+}
+
+#note
+{
+	background-color: #fcdfdb;
+}
+
+#chic
+{
+	background-color: #fff5fd;
+}
+
+#delice
+{
+	background-color: #f9f9f9;
+}
+
+#palette
+{
+	background-color: #fdfffd;
+}
+
+button
+{
+	width: 280px;
+	margin: 40px 0px 40px 160px;
+	height: 50px;
+	background-color: #579c88;
+	color: #fdcb46;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.7em;
+}
+
+footer
+{
+	width: 100%;
+	height: 50px;
+	background-color: #579c88;
+	color: #fdcb46;
+	font-size: 1.3em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p
+{
+	margin: 0 20px 0 20px;
+}
