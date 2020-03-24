@@ -1,4 +1,4 @@
-body
+#bloc_page
 {
 	width: 600px;
 	margin: auto;
@@ -24,7 +24,7 @@ header
 	flex-wrap: wrap;
 }
 
-section img
+.home_menus img
 {
 	width: 210px;
 	height: 300px;
@@ -41,7 +41,7 @@ section img
 	transition-duration: 200ms;
 }
 
-section img:hover
+.home_menus img:hover
 {
 	transform: scale(1.1);
 }
@@ -56,19 +56,14 @@ button
 	border-radius: 10px;
 	border: none;
 	font-size: 1.7em;
-	transition-property: transform;
-	transition-duration: 200ms;
-}
-
-button:hover
-{
-	transform: scale(1.15);
 }
 
 footer
 {
-	width: 100%;
+	width: 600px;
 	height: 50px;
+	position: fixed;
+	bottom: 0px;
 	background-color: #579c88;
 	color: #fdcb46;
 	font-size: 1.3em;
@@ -81,4 +76,26 @@ footer
 footer p
 {
 	margin: 0 20px 0 20px;
+}
+
+/*Page note enchantée*/
+
+.menus_main
+{
+	width: 500px;
+	margin: auto;
+}
+
+.menus_main h1
+{
+	text-align: center;
+}
+
+.menus_main img
+{
+	width: 500px;
+	height: 650px;
+	border: 1px #f1f1f1 solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #ededed;
 }
