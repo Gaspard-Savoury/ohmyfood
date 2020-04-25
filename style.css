@@ -35,7 +35,7 @@ header a
 	background-color: #579c88;
 	color: #fdcb46;
 	font-size: 1.2em;
-	display: flex;
+	display: -webkit-flex;
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
@@ -43,7 +43,7 @@ header a
 
 #menus
 {
-	display: flex;
+	display: -webkit-flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -67,7 +67,7 @@ header a
 	border: 1px #f1f1f1 solid;
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #ededed;
-	display: flex;
+	display: -webkit-flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

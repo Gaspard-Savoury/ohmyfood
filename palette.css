@@ -23,7 +23,7 @@ header a
 	background-color: #579c88;
 	color: #fdcb46;
 	font-size: 1.2em;
-	display: flex;
+	display: -webkit-flex;
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
@@ -36,7 +36,7 @@ footer
 	position: fixed;
 	bottom: 0px;
 	background-color: #579c88;
-	display: flex;
+	display: -webkit-flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
