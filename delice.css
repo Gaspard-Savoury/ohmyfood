@@ -22,7 +22,7 @@
     font-style: normal;
 }
 
-#bloc_page 
+body 
 {
 	width: 600px;
 	margin: auto;
@@ -141,6 +141,28 @@ h3:after
 .title_dessert:after
 {
 	color: #088afb;
+}
+
+.underline
+{
+    position: relative;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:#0670f3;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 section

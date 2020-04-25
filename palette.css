@@ -119,6 +119,28 @@ h3:after
 	-webkit-text-fill-color: transparent;
 }
 
+.underline
+{
+    position: relative;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #bfff7f;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 section
 {
 	width: 500px;

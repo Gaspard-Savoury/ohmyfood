@@ -1,4 +1,4 @@
-#bloc_page 
+body
 {
 	width: 600px;
 	margin: auto;
@@ -101,6 +101,28 @@ h3:after
     margin-right: -50%;
 }
 
+.underline
+{
+    position: relative;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:purple;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 section
 {
 	width: 500px;
@@ -110,7 +132,7 @@ section
 	border: 1px #f1f1f1 solid;
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #ededed;
-	font-family: arial, sans-serif;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .menu_title

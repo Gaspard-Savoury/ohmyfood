@@ -23,3 +23,14 @@ footer
 	width: auto;
 	position: relative;
 }
+
+.menu_total
+{
+	width: 90%;
+	margin: auto;
+}
+
+.menu_items
+{
+	margin: 0;
+}
