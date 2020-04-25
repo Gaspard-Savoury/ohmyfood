@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('blackjack-webfont.eot');
+    src: url('blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('blackjack-webfont.woff2') format('woff2'),
+         url('blackjack-webfont.woff') format('woff'),
+         url('blackjack-webfont.ttf') format('truetype'),
+         url('blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comic_reliefregular';
+    src: url('ComicRelief-webfont.eot');
+    src: url('ComicRelief-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ComicRelief-webfont.woff2') format('woff2'),
+         url('ComicRelief-webfont.woff') format('woff'),
+         url('ComicRelief-webfont.ttf') format('truetype'),
+         url('ComicRelief-webfont.svg#comic_reliefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+	width: 600px;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+header a
+{
+	height: 100px;
+	background-color: #579c88;
+	color: #fdcb46;
+	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+footer
+{
+	width: 600px;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #579c88;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer a
+{
+	margin: 0 20px 0 20px;
+	text-decoration: none;
+	color: #fdcb46;
+	font-size: 1.3em;
+}
+
+footer a:hover
+{
+	animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/*spécifique à la page*/
+
+h2
+{
+	text-align: center;
+}
+
+h3
+{
+  	position: relative;
+	text-align: center;
+	font-size: 0.9em;
+	margin-bottom: 0;
+ 	overflow: hidden;
+ 	margin-left: 40px;
+ 	margin-right: 40px;
+}
+
+h3:before,
+h3:after 
+{
+    border-top: 3px solid;
+    content: "";
+    display: inline-block;
+    height: .1em;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+}
+
+h3:before 
+{
+    right: 1.5em;
+    margin-left: -50%;
+}
+
+h3:after 
+{
+    left: 1.5em;
+    margin-right: -50%;
+}
+
+.title_entree:before, 
+.title_entree:after
+{
+	color: #0022db;
+}
+
+.title_main:before,
+.title_main:after
+{
+	color: #0670f3;
+}
+
+.title_dessert:before,
+.title_dessert:after
+{
+	color: #088afb;
+}
+
+.underline
+{
+    position: relative;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:#0670f3;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+section
+{
+	width: 500px;
+	height: 650px;
+	background-color: #f9f9f9;
+	margin: auto;
+	border: 1px #f1f1f1 solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #ededed;
+	font-family: "comic_reliefregular", sans-serif;
+	font-style: italic;
+}
+
+.menu_title
+{
+	font-size: 2em;
+	font-family: "black_jackregular", sans-serif;
+	background: -webkit-linear-gradient(right, #088afb, #0022db);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.menu_items
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 70px 0 60px;
+}
+
+.menu_items ul + ul
+{
+	font-weight: bold;
+}
+
+ul
+{
+	list-style-type: none;
+	font-size: 0.65em;
+	margin-left: -40px;
+}
+
+li
+{
+	margin-top: 12px;
+}
