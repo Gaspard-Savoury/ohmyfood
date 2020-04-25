@@ -1,11 +1,11 @@
-#bloc_page
+body
 {
 	width: 600px;
 	margin: auto;
 	font-family: sans-serif;
 }
 
-header
+header a
 {
 	height: 100px;
 	background-color: #579c88;
@@ -14,6 +14,7 @@ header
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
 }
 
 #menus
@@ -26,24 +27,33 @@ header
 
 .home_menus
 {
+	margin: 30px 20px 0px 20px;
+	transform: scale(1);
+	transition-property: transform;
+	transition: opacity;
+	transition-duration: 200ms;
+	opacity: 1;
+}
+
+.home_menus a
+{
+	text-decoration: none;
 	width: 210px;
 	height: 300px;
 	border: 1px #f1f1f1 solid;
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #ededed;
-	margin: 30px 20px 0px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: scale(1);
-	transition-property: transform;
-	transition-duration: 200ms;
 }
+
 
 .home_menus:hover
 {
 	transform: scale(1.1);
+	opacity: 0.5;
 }
 
 .home_menus h2
@@ -56,19 +66,76 @@ header
 	background-color: #fcdfdb;
 }
 
+#note i
+{
+	font-size: 2em;
+	background: -webkit-linear-gradient(right, orange, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#note a
+{
+	color: #3d1319;
+}
+
+#note p
+{
+	color: #3d1319;
+	text-transform: uppercase;
+}
+
 #chic
 {
 	background-color: #fff5fe;
+	color: orange;
+}
+
+#chic h2
+{
+	background: -webkit-linear-gradient(right, #e38812, #8e5aff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#chic p
+{
+	color: #e38812;
 }
 
 #delice
 {
 	background-color: #f9f9f9;
+	color: blue;
+}
+
+#delice h2
+{
+	background: -webkit-linear-gradient(right, #0889fb, #0023db);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#delice p
+{
+	color: #0889fb;
 }
 
 #palette
 {
 	background-color: #fdfffd;
+}
+
+#palette h2
+{
+	background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#palette p
+{
+	color: green;
 }
 
 button
@@ -104,4 +171,21 @@ footer a
 	font-size: 1.3em;
 }
 
-/*Page note enchantée*/
+footer a:hover
+{
+	animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
