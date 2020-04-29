@@ -1,0 +1,148 @@
+@import "variables.scss";
+@import "functions.scss";
+
+@font-face {
+    font-family: 'comic_reliefregular';
+    src: url('fonts/ComicRelief-webfont.eot');
+    src: url('fonts/ComicRelief-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ComicRelief-webfont.woff2') format('woff2'),
+         url('fonts/ComicRelief-webfont.woff') format('woff'),
+         url('fonts/ComicRelief-webfont.ttf') format('truetype'),
+         url('fonts/ComicRelief-webfont.svg#comic_reliefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('fonts/blackjack-webfont.eot');
+    src: url('fonts/blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blackjack-webfont.woff2') format('woff2'),
+         url('fonts/blackjack-webfont.woff') format('woff'),
+         url('fonts/blackjack-webfont.ttf') format('truetype'),
+         url('fonts/blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	width: 600px;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+header a
+{
+	height: 100px;
+	background-color: color(primary);
+	color: color(secondary);
+	font-size: 20px;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+footer
+{
+	width: 600px;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	background-color: color(primary);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    a {
+        margin: 0 20px 0 20px;
+        text-decoration: none;
+        color: color(secondary);
+        font-size: 1.3em;
+        &:hover{
+            animation: shake 1s;
+        }
+    }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*menus spécifiques */
+
+h1
+{
+	text-align: center;
+}
+
+h3
+{
+  	position: relative;
+	text-align: center;
+	font-size: 0.9em;
+	margin-bottom: 0;
+ 	overflow: hidden;
+ 	margin-left: 40px;
+ 	margin-right: 40px;
+}
+
+
+/* animation underline */
+
+.underline
+{
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+/* forme de base des menus  */
+
+.menu_total
+{
+	width: 500px;
+	height: 650px;
+	margin: auto;
+	border: 1px color(menu_border) solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px color(menu_shadow);
+}
+
+.menu_items
+{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    ul + ul {
+        font-weight: bold;
+    }
+}
+
+ul
+{
+	list-style-type: none;
+}

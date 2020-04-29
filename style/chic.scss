@@ -1,0 +1,73 @@
+@import "variables.scss";
+@import "functions.scss";
+
+h3 {
+    &::before, &::after {
+        border-top: 5px solid;
+        content: "";
+        display: inline-block;
+        height: .1em;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+        margin-bottom: .15em;
+    }
+    &::before {
+        right: 1.5em;
+        margin-left: -50%;
+    }
+    &::after {
+        left: 1.5em;
+        margin-right: -50%;
+    }
+}
+
+.underline:before 
+{
+  background-color: color(chic_middle);
+}
+
+.menu_total
+{
+	background-color: color(chic_bg);
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.menu_title
+{
+	margin: 70px 0 65px 0;
+	background: -webkit-linear-gradient(right, color(chic_gradient_1), color(chic_gradient_2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.menu_items
+{
+	margin: 0 70px 40px 60px;
+}
+
+#entree
+{
+	color: color(chic_gradient_1);
+}
+
+#main
+{
+	color: color(chic_middle);
+}
+
+#dessert
+{
+	color: color(chic_gradient_2);
+}
+
+ul
+{
+	font-size: 0.7em;
+	margin-left: -40px;
+}
+
+li
+{
+	margin-top: 12px;
+}

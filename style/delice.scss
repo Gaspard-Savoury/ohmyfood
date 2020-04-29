@@ -1,0 +1,78 @@
+@import "variables.scss";
+@import "functions.scss";
+
+h3 {
+    &:before, &:after {
+        border-top: 3px solid;
+        content: "";
+        display: inline-block;
+        height: .1em;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+        margin-bottom: .15em;
+    }
+    &::before{
+        right: 1.5em;
+        margin-left: -50%;
+    }
+    &::after{
+        left: 1.5em;
+        margin-right: -50%;
+    }
+}
+
+.title_entree:before, 
+.title_entree:after
+{
+	color: color(delice_gradient_2);
+}
+
+.title_main:before,
+.title_main:after
+{
+	color: color(delice_middle);
+}
+
+.title_dessert:before,
+.title_dessert:after
+{
+	color: color(delice_gradient_1);
+}
+
+.underline:before
+{
+	background-color: color(delice_middle);
+}
+
+.menu_total
+{
+	background-color: color(delice_bg);
+	font-family: "comic_reliefregular", sans-serif;
+	font-style: italic;
+}
+
+.menu_title
+{
+	font-size: 2em;
+	font-family: "black_jackregular", sans-serif;
+	background: -webkit-linear-gradient(right, color(delice_gradient_1), color(delice_gradient_2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.menu_items
+{
+	margin: 0 70px 0 60px;
+}
+
+ul
+{
+	font-size: 0.65em;
+	margin-left: -40px;
+}
+
+li
+{
+	margin-top: 12px;
+}

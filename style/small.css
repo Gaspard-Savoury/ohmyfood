@@ -1,36 +1,42 @@
-body	
-{
-	width: auto;
+body {
+  width: auto;
 }
 
-#menus
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-button
-{
-	width: 50%;
-	margin: 30px 0px 30px 25%;
-	display: flex;
-	justify-content: center;
+button {
+  width: 50%;
+  margin: 30px 0px 30px 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-footer
-{
-	width: auto;
-	position: relative;
+footer {
+  width: auto;
+  position: relative;
 }
 
-.menu_total
-{
-	width: 90%;
-	margin: auto;
+.menu_total {
+  width: 90%;
+  margin: auto;
 }
 
-.menu_items
-{
-	margin: 0;
+.menu_items {
+  margin: 0;
 }
+/*# sourceMappingURL=small.css.map */
