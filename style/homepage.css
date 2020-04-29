@@ -1,0 +1,176 @@
+#menus
+{
+	display: -webkit-flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.home_menus
+{
+	margin: 30px 20px 0px 20px;
+}
+
+.home_menus a
+{
+	text-decoration: none;
+	width: 210px;
+	height: 300px;
+	border: 1px #f1f1f1 solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #ededed;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+}
+
+.home_menus p
+{
+	font-size: 1.3em;
+	text-transform: capitalize;
+}
+
+.menu_text
+{
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: scale(1);
+	opacity: 1;
+	transition-property: opacity;
+	transition-property: transform;
+	transition-duration: 300ms;
+}
+
+.menu_text:hover
+{
+	transform: scale(1.15);
+	opacity: 0.6;
+}
+
+.home_menus h2
+{
+	font-size: 1em;
+}
+
+#note
+{
+	background-color: #fcdfdb;
+	font-family: 'comic_reliefregular', sans-serif;
+}
+
+#note i
+{
+	font-size: 2em;
+	background: -webkit-linear-gradient(right, orange, red);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#note a
+{
+	color: #3d1319;
+	font-size: 1em;
+}
+
+#note p
+{
+	color: #3d1319;
+	text-transform: uppercase;
+}
+
+#chic
+{
+	background-color: #fff5fe;
+	color: orange;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#chic h2
+{
+	background: -webkit-linear-gradient(right, #e38812, #8e5aff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#chic p
+{
+	color: #e38812;
+}
+
+#delice
+{
+	background-color: #f9f9f9;
+	color: blue;
+}
+
+#delice h2
+{
+	background: -webkit-linear-gradient(right, #0889fb, #0023db);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: 'black_jackregular', sans-serif;
+	font-size: 1.2em;
+}
+
+#delice p
+{
+	color: #0889fb;
+}
+
+#palette
+{
+	background-color: #fdfffd;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#palette h2
+{
+	background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: italic;
+}
+
+#palette p
+{
+	color: green;
+}
+
+button
+{
+	width: 280px;
+	margin: 30px 0px 30px 160px;
+	height: 50px;
+	background-color: #579c88;
+	color: #fdcb46;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.7em;
+}
+
+button::after
+{
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: bottom;
+	-webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+	animation: ellipsis steps(4,end) 900ms infinite;
+	content: "\2026";
+	width: 0px;
+}
+
+@keyframes ellipsis {
+	to {
+	  width: 1.25em;    
+	}
+  }
+  
+  @-webkit-keyframes ellipsis {
+	to {
+	  width: 1.25em;    
+	}
+  }

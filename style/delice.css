@@ -1,0 +1,79 @@
+h3:before,
+h3:after 
+{
+    border-top: 3px solid;
+    content: "";
+    display: inline-block;
+    height: .1em;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+}
+
+h3:before 
+{
+    right: 1.5em;
+    margin-left: -50%;
+}
+
+h3:after 
+{
+    left: 1.5em;
+    margin-right: -50%;
+}
+
+.title_entree:before, 
+.title_entree:after
+{
+	color: #0022db;
+}
+
+.title_main:before,
+.title_main:after
+{
+	color: #0670f3;
+}
+
+.title_dessert:before,
+.title_dessert:after
+{
+	color: #088afb;
+}
+
+.underline:before
+{
+	background-color: #0670f3;
+}
+
+.menu_total
+{
+	background-color: #f9f9f9;
+	font-family: "comic_reliefregular", sans-serif;
+	font-style: italic;
+}
+
+.menu_title
+{
+	font-size: 2em;
+	font-family: "black_jackregular", sans-serif;
+	background: -webkit-linear-gradient(right, #088afb, #0022db);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.menu_items
+{
+	margin: 0 70px 0 60px;
+}
+
+ul
+{
+	font-size: 0.65em;
+	margin-left: -40px;
+}
+
+li
+{
+	margin-top: 12px;
+}
