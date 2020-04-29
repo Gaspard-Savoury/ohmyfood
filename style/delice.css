@@ -58,7 +58,7 @@ h3:after
 	font-size: 2em;
 	font-family: "black_jackregular", sans-serif;
 	background: -webkit-linear-gradient(right, #088afb, #0022db);
-	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
