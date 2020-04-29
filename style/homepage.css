@@ -9,11 +9,6 @@
 .home_menus
 {
 	margin: 30px 20px 0px 20px;
-	transform: scale(1);
-	transition-property: transform;
-	transition: opacity;
-	transition-duration: 200ms;
-	opacity: 1;
 }
 
 .home_menus a
@@ -37,11 +32,23 @@
 	text-transform: capitalize;
 }
 
-
-.home_menus:hover
+.menu_text
 {
-	transform: scale(1.1);
-	opacity: 0.5;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: scale(1);
+	opacity: 1;
+	transition-property: opacity;
+	transition-property: transform;
+	transition-duration: 300ms;
+}
+
+.menu_text:hover
+{
+	transform: scale(1.15);
+	opacity: 0.6;
 }
 
 .home_menus h2
