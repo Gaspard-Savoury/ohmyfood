@@ -1,0 +1,150 @@
+@import "variables.scss";
+@import "functions.scss";
+
+#menus
+{
+	display: -webkit-flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.home_menus
+{
+    margin: 30px 20px 0px 20px;
+    a {
+        text-decoration: none;
+	    width: 210px;
+	    height: 300px;
+	    border: 1px color(menu_border) solid;
+	    border-radius: 5px;
+        box-shadow: 1px 1px 10px color(menu_shadow);
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1.3em;
+	    text-transform: capitalize;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+
+.menu_text
+{
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: scale(1);
+	opacity: 0.7;
+	transition-property: opacity;
+	transition-property: transform;
+    transition-duration: 300ms;
+    &:hover {
+        transform: scale(1.15);
+	    opacity: 1;
+    }
+}
+
+#note
+{
+	background-color: color(note_bg);
+    font-family: 'comic_reliefregular', sans-serif;
+    i {
+        font-size: 2em;
+        background: -webkit-linear-gradient(right, color(note_gradient_1), color(note_gradient_2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    a {
+        color: color(note_text);
+    	font-size: 1em;
+    }
+    p {
+        color: color(note_text);
+    	text-transform: uppercase;
+    }
+}
+
+#chic
+{
+	background-color: color(chic_bg);
+	color: color(chic_gradient_1);
+    font-family: 'Times New Roman', Times, serif;
+    h2 {
+        background: -webkit-linear-gradient(right, color(chic_gradient_1), color(chic_gradient_2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        color: color(chic_gradient_1);
+    }
+}
+
+#delice
+{
+	background-color: color(delice_bg);
+    h2 {
+        background: -webkit-linear-gradient(right, color(delice_gradient_1), color(delice_gradient_2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'black_jackregular', sans-serif;
+    	font-size: 1.2em;
+    }
+    p {
+        color: color(delice_gradient_1);
+    }
+}
+
+#palette
+{
+	background-color: color(palette_bg);
+    font-family: Arial, Helvetica, sans-serif;
+    h2 {
+        background: -webkit-linear-gradient(right, color(palette_gradient_1), color(palette_gradient_2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-style: italic;
+    }
+    p {
+        color: color(palette_gradient_2);
+    }
+}
+
+button
+{
+	width: 280px;
+	margin: 30px 0px 30px 160px;
+	height: 50px;
+	background-color: color(primary);
+	color: color(secondary);
+	border-radius: 10px;
+	border: none;
+    font-size: 1.7em;
+    &:after {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+        -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+        animation: ellipsis steps(4,end) 900ms infinite;
+        content: "\2026";
+        width: 0px;
+    }
+}
+
+@keyframes ellipsis {
+	to {
+	  width: 1.25em;    
+	}
+  }
+  
+  @-webkit-keyframes ellipsis {
+	to {
+	  width: 1.25em;    
+	}
+  }

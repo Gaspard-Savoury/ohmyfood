@@ -1,68 +1,59 @@
-h3:before,
-h3:after 
-{
-    border-top: 5px;
-    content: "";
-    display: inline-block;
-    height: .5em;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-    margin-bottom: .15em;
+h3::before, h3::after {
+  border-top: 5px;
+  content: "";
+  display: inline-block;
+  height: .5em;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  margin-bottom: .15em;
 }
 
-h3:before 
-{
-    right: 1.5em;
-    margin-left: -50%;
-    background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
-	-webkit-background-clip: border;
-	-webkit-text-fill-color: transparent;
+h3::before {
+  right: 1.5em;
+  margin-left: -50%;
+  background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
+  -webkit-background-clip: border;
+  -webkit-text-fill-color: transparent;
 }
 
-h3:after 
-{
-    left: 1.5em;
-    margin-right: -50%;
-    background: -webkit-linear-gradient(left, #bfff7f, #3e923a);
-	-webkit-background-clip: border;
-	-webkit-text-fill-color: transparent;
+h3::after {
+  left: 1.5em;
+  margin-right: -50%;
+  background: -webkit-linear-gradient(left, #bfff7f, #3e923a);
+  -webkit-background-clip: border;
+  -webkit-text-fill-color: transparent;
 }
 
-.underline:before 
-{
+.underline:before {
   background-color: #bfff7f;
-} 
-
-.menu_total
-{
-	background-color: #fdfffd;
-	font-family: "comic_reliefregular", sans-serif;
-	font-style: italic;
 }
 
-.menu_title
-{
-	font-size: 1.5em;
-	font-family: arial, sans-serif;
-	background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin: 60px 0 60px 0;
+.menu_total {
+  background-color: #fdfffd;
+  font-family: "comic_reliefregular", sans-serif;
+  font-style: italic;
 }
 
-.menu_items
-{
-	margin: 0 70px 0 60px;
+.menu_title {
+  font-size: 1.5em;
+  font-family: arial, sans-serif;
+  background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 60px 0 60px 0;
 }
 
-ul
-{
-	font-size: 0.6em;
-	margin-left: -40px;
+.menu_items {
+  margin: 0 70px 0 60px;
 }
 
-li
-{
-	margin-top: 12px;
+ul {
+  font-size: 0.6em;
+  margin-left: -40px;
 }
+
+li {
+  margin-top: 12px;
+}
+/*# sourceMappingURL=palette.css.map */
