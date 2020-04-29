@@ -34,7 +34,7 @@ header a
 	height: 100px;
 	background-color: #579c88;
 	color: #fdcb46;
-	font-size: 1.2em;
+	font-size: 20px;
 	display: -webkit-flex;
 	align-items: center;
 	justify-content: center;
@@ -102,7 +102,7 @@ header a
 {
 	font-size: 2em;
 	background: -webkit-linear-gradient(right, orange, red);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -128,7 +128,7 @@ header a
 #chic h2
 {
 	background: -webkit-linear-gradient(right, #e38812, #8e5aff);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -146,7 +146,7 @@ header a
 #delice h2
 {
 	background: -webkit-linear-gradient(right, #0889fb, #0023db);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: 'black_jackregular', sans-serif;
 	font-size: 1.2em;;
@@ -166,7 +166,7 @@ header a
 #palette h2
 {
 	background: -webkit-linear-gradient(right, #bfff7f, #3e923a);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-style: italic;
 }

@@ -34,7 +34,7 @@ header a
 	height: 100px;
 	background-color: #579c88;
 	color: #fdcb46;
-	font-size: 1.2em;
+	font-size: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -84,7 +84,7 @@ footer a:hover
 
 /*spécifique à la page*/
 
-h2
+h1
 {
 	text-align: center;
 }
@@ -183,7 +183,7 @@ section
 	font-size: 2em;
 	font-family: "black_jackregular", sans-serif;
 	background: -webkit-linear-gradient(right, #088afb, #0022db);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 

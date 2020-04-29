@@ -1,3 +1,4 @@
+$banner: #579c88;
 @font-face {
     font-family: 'comic_reliefregular';
     src: url('ComicRelief-webfont.eot');
@@ -22,9 +23,6 @@
     font-style: normal;
 }
 
-$banner_green: #579c88;
-$gold: #fdcb46;
-
 body
 {
 	width: 600px;
@@ -35,8 +33,8 @@ body
 header a
 {
 	height: 100px;
-	background-color: $banner_green;
-	color: $gold;
+	background-color: $banner;
+	color: #fdcb46;
 	font-size: 1.2em;
 	display: -webkit-flex;
 	align-items: center;

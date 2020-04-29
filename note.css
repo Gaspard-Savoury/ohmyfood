@@ -70,12 +70,9 @@ footer a:hover
 
 /*spécifique à la page*/
 
-h2
+h1
 {
 	text-align: center;
-	background-image: linear-gradient(45deg, red, yellow)
-	background-clip: text;
-	text-fill-color: transparent;
 }
 
 h3
@@ -163,7 +160,7 @@ section
 	color: orange;
 	margin-bottom: -25px;
 	background: -webkit-linear-gradient(right, orange, red);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -200,7 +197,7 @@ section
 	color: orange;
 	margin: 20px 10px 0 0;
 	background: -webkit-linear-gradient(right, orange, red);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 

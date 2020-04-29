@@ -60,7 +60,7 @@ footer a:hover
 
 /*spécifique à la page*/
 
-h2
+h1
 {
 	text-align: center;
 }
@@ -139,7 +139,7 @@ section
 {
 	margin: 70px 0 65px 0;
 	background: -webkit-linear-gradient(right, #e38812, #8e5aff);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
