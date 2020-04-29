@@ -38,7 +38,7 @@ h3:after
 {
 	margin: 70px 0 65px 0;
 	background: -webkit-linear-gradient(right, #e38812, #8e5aff);
-	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
