@@ -32,16 +32,23 @@ body
 	font-family: sans-serif;
 }
 
-header a
+header
 {
-	height: 100px;
-	background-color: color(primary);
-	color: color(secondary);
-	font-size: 20px;
-	display: -webkit-flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
+    a {
+        height: 100px;
+        background-color: color(primary);
+        color: color(secondary);
+        display: -webkit-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+    }
 }
 
 footer

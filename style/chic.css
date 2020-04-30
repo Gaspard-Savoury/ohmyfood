@@ -19,8 +19,16 @@ h3::after {
   margin-right: -50%;
 }
 
-.underline:before {
+#underline_entree:before {
+  background-color: #e38812;
+}
+
+#underline_main::before {
   background-color: #a56799;
+}
+
+#underline_dessert::before {
+  background-color: #8e5aff;
 }
 
 .menu_total {
@@ -30,6 +38,7 @@ h3::after {
 
 .menu_title {
   margin: 70px 0 65px 0;
+  font-size: 1.5em;
   background: -webkit-linear-gradient(right, #e38812, #8e5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
