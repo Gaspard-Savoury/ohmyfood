@@ -24,6 +24,9 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
@@ -33,6 +36,7 @@ footer {
 
 .menu_total {
   width: 90%;
+  height: auto;
   margin: auto;
 }
 
