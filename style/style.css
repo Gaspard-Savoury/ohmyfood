@@ -25,7 +25,6 @@ header a {
   height: 100px;
   background-color: #579c88;
   color: #fdcb46;
-  font-size: 20px;
   display: -webkit-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -34,6 +33,14 @@ header a {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
+}
+
+header a h1 {
+  font-size: 2.5em;
+}
+
+header a h2 {
+  font-size: 2.5em;
 }
 
 footer {

@@ -34,8 +34,16 @@ h3::after {
   color: #0889fb;
 }
 
-.underline:before {
+#underline_entree::before {
+  background-color: #0023db;
+}
+
+#underline_main:before {
   background-color: #0670f3;
+}
+
+#underline_dessert::before {
+  background-color: #0889fb;
 }
 
 .menu_total {

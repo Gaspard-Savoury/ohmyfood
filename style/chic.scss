@@ -22,9 +22,19 @@ h3 {
     }
 }
 
-.underline:before 
+#underline_entree:before 
 {
-  background-color: color(chic_middle);
+    background-color: color(chic_gradient_1);
+}
+
+#underline_main::before
+{
+    background-color: color(chic_middle);
+}
+
+#underline_dessert::before
+{
+    background-color: color(chic_gradient_2);
 }
 
 .menu_total
@@ -35,7 +45,8 @@ h3 {
 
 .menu_title
 {
-	margin: 70px 0 65px 0;
+    margin: 70px 0 65px 0;
+    font-size: 1.5em;
 	background: -webkit-linear-gradient(right, color(chic_gradient_1), color(chic_gradient_2));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

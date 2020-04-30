@@ -40,9 +40,19 @@ h3 {
 	color: color(delice_gradient_1);
 }
 
-.underline:before
+#underline_entree::before
+{
+    background-color: color(delice_gradient_2);
+}
+
+#underline_main:before
 {
 	background-color: color(delice_middle);
+}
+
+#underline_dessert::before
+{
+    background-color: color(delice_gradient_1);
 }
 
 .menu_total
